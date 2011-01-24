@@ -5,26 +5,25 @@
 
 
 \ifpdf
-    \pdfinfo { /Title  (CUED PhD and MPhil Thesis Classes)
+    \pdfinfo { /Title  (Visual Object Category Recognition)
                /Creator (TeX)
                /Producer (pdfTeX)
-               /Author (Harish Bhanderi harish.bhanderi@cantab.net)
-               /CreationDate (D:20030101000000)  %format D:YYYYMMDDhhmmss
-               /ModDate (D:20030815213532)
-               /Subject (Writing a PhD thesis in LaTeX)
-               /Keywords (PhD, Thesis)}
+               /Author (Ashish Gupta a.gupta@surrey.ac.uk)
+               /CreationDate (D:20110101000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20110625000000)
+               /Subject (PhD thesis: Visual Object Category Recognition)
+               /Keywords (Visual Category, Recognition)}
     \pdfcatalog { /PageMode (/UseOutlines)
                   /OpenAction (fitbh)  }
 \fi
 
-\title{Writing a PhD Thesis\\[1ex]
-        in \LaTeXe}
+\title{Visual Object Category Recognition}
 
 \ifpdf
   \author{\href{mailto:a.gupta@surrey.ac.uk}{Ashish Gupta}}
   \collegeordept{\href{http://www.ee.surrey.ac.uk/CVSSP/}{Centre for Vision, Speech and Signal Processing}}
   \university{\href{http://www.surrey.ac.uk}{University of Surrey}}
-  \crest{\includegraphics[width=30mm]{UnivShield}}
+  \crest{\includegraphics[width=60mm]{UnivShield}}
 \else
   \author{Ashish Gupta}
   \collegeordept{Centre for Vision, Speech and Signal Processing}
@@ -38,7 +37,7 @@
 %
 %\renewcommand{\submittedtext}{change the default text here if needed}
 \degree{Doctor of Philosophy}
-\degreedate{Yet to be decided}
+\degreedate{Dec 2011}
 
 % turn of those nasty overfull and underfull hboxes
 \hbadness=10000
@@ -51,25 +50,6 @@
 \onehalfspacing
 
 \begin{document}
-
-%\language{english}
-
-% A page with the abstract on including title and author etc may be
-% required to be handed in separately. If this is not so, then comment
-% the below 3 lines (between '\begin{abstractseparte}' and 
-% 'end{abstractseparate}'), normally like a declaration ... needs some more
-% work, mind as environment abstracts creates a new page!
-% \begin{abstractseparate}
-%   \input{Abstract/abstract}
-% \end{abstractseparate}
-
-
-
-
-% Using the watermark package which is in StyleFiles/
-% and to remove DRAFT COPY ONLY appearing on the top of all pages comment out below line
-%\watermark{DRAFT COPY ONLY}
-
 
 \maketitle
 

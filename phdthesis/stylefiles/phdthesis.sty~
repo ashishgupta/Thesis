@@ -5,19 +5,19 @@
 \RequirePackage[pdftex]{graphicx}
 
 % package for including subfigures
-\usepackage{subfigure}
+\RequirePackage{subfigure}
 
 % package for upper case greek letters
-\usepackage{upgreek}
+\RequirePackage{upgreek}
 
 % package for color text of latex
-\usepackage{xcolor}
+\RequirePackage{xcolor}
 
 % package for language support for british english
-\usepackage[british]{babel}
+\RequirePackage[british]{babel}
 
 % package for checking if pdfTex in pdf mode
-\usepackage{ifpdf}
+\RequirePackage{ifpdf}
 
 %% change the equation number appearance
 %% load up the AMS math package
@@ -83,6 +83,11 @@
 \makeatother
 
 
+% package for fancy chapters
+%% this package should conflict with the package fancyhdr
+\RequirePackage[Bjornstrup]{fncychap}
+
+
 %% now change the chapter style
 %% load up the quotchap package
 \RequirePackage[avantgarde]{quotchap}
@@ -96,6 +101,7 @@
 
 \titleformat{\section}[hang]{\sffamily\bfseries}
 {\Large\thesection}{12pt}{\Large}[{\titlerule[0.5pt]}]
+
 
 % the last package to be included in the document!
 % package for hyperlinks 
@@ -111,10 +117,10 @@
     pdfstartview={FitH},    % fits the width of the page to the window
     pdftitle={\thesistitle},    % title
     pdfauthor={\authorname},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfcreator={\authorname},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfsubject={\subjectname},   % subject of the document
+    pdfcreator={Kile},   % creator of the document
+    pdfproducer={pdfTex}, % producer of the document
+    pdfkeywords={\thesiskeywordfirst} {\thesiskeywordsecond} {\thesiskeywordthird}, % list of keywords
     pdfnewwindow=true,      % links in new window
     colorlinks=false,       % false: boxed links; true: colored links
     linkcolor=red,          % color of internal links

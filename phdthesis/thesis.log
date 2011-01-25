@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.4)  25 JAN 2011 17:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.4)  25 JAN 2011 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,6 +209,16 @@ Style option: `fancybox' v1.3 <2000/09/19> (tvz)
 \f@ncyO@olf=\skip59
 \f@ncyO@orf=\skip60
 )
+(/usr/share/texmf-texlive/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip61
+\mylen=\skip62
+\myhi=\skip63
+\px=\skip64
+\py=\skip65
+\pyy=\skip66
+\pxx=\skip67
+)
 (/usr/share/texmf-texlive/tex/latex/quotchap/quotchap.sty
 Package: quotchap 1998/02/09 v0.9f Decorative Chapter Headings with Quotes
 \@quotebox=\box31
@@ -216,8 +226,8 @@ Package: quotchap 1998/02/09 v0.9f Decorative Chapter Headings with Quotes
 (/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box32
-\beforetitleunit=\skip61
-\aftertitleunit=\skip62
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
 \ttl@plus=\dimen119
 \ttl@minus=\dimen120
 \ttl@toksa=\toks24
@@ -335,16 +345,16 @@ File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 124.
+(hyperref)                setting the option has no effect on input line 130.
 
-Package hyperref Info: Option `unicode' set `false' on input line 124.
+Package hyperref Info: Option `unicode' set `false' on input line 130.
 (/usr/share/texmf-texlive/tex/latex/hyperref/puenc.def
 File: puenc.def 2009/10/09 v6.79a Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 124.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 124.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 124.
-Package hyperref Info: Option `colorlinks' set `false' on input line 124.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 130.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 130.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 130.
+Package hyperref Info: Option `colorlinks' set `false' on input line 130.
 )
 (./stylefiles/title.sty
 
@@ -352,11 +362,11 @@ LaTeX Warning: You have requested package `stylefiles/title',
                but the package provides `title'.
 
 Package: title 2005/05/09
-) (./thesis.aux (./dedication/dedication.aux)
+) (./thesis.aux (./title/title.aux) (./dedication/dedication.aux)
 (./acknowledgement/acknowledgement.aux) (./abstract/abstract.aux)
-(./chapter1/chapter1.aux) (./chapter2/chapter2.aux) (./chapter3/chapter3.aux)
-(./chapter4/chapter4.aux) (./chapter5/chapter5.aux) (./chapter6/chapter6.aux)
-(./chapter7/chapter7.aux) (./appendix/appendix1.aux))
+(./chapter1/introduction.aux) (./chapter2/chapter2.aux)
+(./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux)
+(./chapter6/chapter6.aux) (./chapter7/chapter7.aux) (./appendix/appendix1.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -375,7 +385,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
-
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
@@ -400,6 +409,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
+ (./thesis.out)
+(./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
@@ -407,7 +418,7 @@ LaTeX Info: Redefining \pageref on input line 18.
 \openout2 = `title/title.aux'.
 
  (./title/title.tex
-<./figs/png/UoSArms.png, id=3, 260.975pt x 329.23pt>
+<./figs/png/UoSArms.png, id=11, 260.975pt x 329.23pt>
 File: ./figs/png/UoSArms.png Graphic file (type png)
 
 <use ./figs/png/UoSArms.png>
@@ -445,14 +456,11 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <100> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 34.
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+ (./thesis.toc)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[1
+ [1
 
 
 
@@ -466,14 +474,11 @@ Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 Non-PDF special ignored!
 Non-PDF special ignored!] [2
 
-]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
-[3
+ [3
 Non-PDF special ignored!
 Non-PDF special ignored!] [4
 
@@ -541,26 +546,25 @@ l.50 \backmatter
 (./chapter1/introduction.aux) (./chapter2/chapter2.aux)
 (./chapter3/chapter3.aux) (./chapter4/chapter4.aux) (./chapter5/chapter5.aux)
 (./chapter6/chapter6.aux) (./chapter7/chapter7.aux) (./appendix/appendix1.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 7703 strings out of 495061
- 101764 string characters out of 1182622
- 178766 words of memory out of 3000000
- 10667 multiletter control sequences out of 15000+50000
- 10202 words of font info for 23 fonts, out of 3000000 for 9000
+ 7798 strings out of 495061
+ 102710 string characters out of 1182622
+ 181889 words of memory out of 3000000
+ 10746 multiletter control sequences out of 15000+50000
+ 11216 words of font info for 26 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  45i,17n,45p,293b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-mss17.pfb></usr/share/texmf-texlive/fonts/type1/urw/avantgar/uagd8a.pfb>
-Output written on thesis.pdf (8 pages, 128961 bytes).
+mss10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss17.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share
+/texmf-texlive/fonts/type1/urw/avantgar/uagd8a.pfb>
+Output written on thesis.pdf (8 pages, 153296 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 22 words of extra memory for PDF output out of 10000 (max. 10000000)
 

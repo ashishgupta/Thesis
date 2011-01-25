@@ -1,0 +1,15 @@
+
+%: ----------------------------------------------------------------------
+%:                  TITLE PAGE: 
+% ----------------------------------------------------------------------
+
+\begin{titlepage}
+\author{Ashish Gupta}
+\title{Visual Object Category Recognition}
+\date{December 2011}
+\coatofarms{../figs/eps/UoSArms}
+\maketitle
+\end{titlepage}
+
+
+

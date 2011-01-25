@@ -1,0 +1,86 @@
+%input macros (i.e. write your own macros file called MacroFile1.tex)
+%\include{Macros/MacroFile1}
+
+ \documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+
+
+\ifpdf
+    \pdfinfo { /Title  (Visual Object Category Recognition)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (Ashish Gupta a.gupta@surrey.ac.uk)
+               /CreationDate (D:20110101000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20110625000000)
+               /Subject (PhD thesis: Visual Object Category Recognition)
+               /Keywords (Visual Category, Recognition)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+\title{Visual Object Category Recognition}
+
+\ifpdf
+  \author{\href{mailto:a.gupta@surrey.ac.uk}{Ashish Gupta}}
+  \collegeordept{\href{http://www.ee.surrey.ac.uk/CVSSP/}{Centre for Vision, Speech and Signal Processing}}
+  \university{\href{http://www.surrey.ac.uk}{University of Surrey}}
+  \crest{\includegraphics[width=60mm]{UnivShield}}
+\else
+  \author{Ashish Gupta}
+  \collegeordept{Centre for Vision, Speech and Signal Processing}
+  \university{University of Surrey}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{UnivShield}}
+\fi
+%
+% insert below the file name that contains the crest in-place of 'UnivShield'
+% \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
+%
+%\renewcommand{\submittedtext}{change the default text here if needed}
+\degree{Doctor of Philosophy}
+\degreedate{Dec 2011}
+
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+% Put all the style files you want in the directory StyleFiles and usepackage like this:
+% \usepackage{StyleFiles/watermark}
+
+% Comment out the next line to get single spacing
+\onehalfspacing
+
+\begin{document}
+
+\maketitle
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\pagenumbering{roman}
+\include{Dedication/dedication}
+\include{Acknowledgement/acknowledgement}
+\include{Abstract/abstract}
+
+\tableofcontents
+\listoffigures
+\printnomenclature  %% Print the nomenclature
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+\mainmatter % book mode only
+% \include{Introduction/introduction}
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
+\include{Chapter3/chapter3}
+% \include{Conclusions/conclusions}
+
+\backmatter % book mode only
+\appendix
+\include{Appendix1/appendix1}
+\include{Appendix2/appendix2}
+
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\bibliography{References/references} % References file
+
+\end{document}

@@ -2,6 +2,9 @@
 #input arguments
 thesisroot=$@
 echo $thesisroot
+if [ ! -d "$thesisroot" ]; then
+	mkdir $thesisroot
+fi
 cd $thesisroot
 touch thesis.tex
 #front matter:

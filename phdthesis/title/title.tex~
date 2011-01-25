@@ -1,0 +1,14 @@
+
+%: ----------------------------------------------------------------------
+%:                  TITLE PAGE: 
+% ----------------------------------------------------------------------
+
+\begin{titlepage}
+\author{Ashish Gupta}
+\title{Visual Object Category Recognition}
+\date{December 2011}
+\maketitle
+\end{titlepage}
+
+
+

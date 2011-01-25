@@ -1,9 +1,26 @@
 \relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\@input{title/title.aux}
+\select@language{british}
+\@writefile{toc}{\select@language{british}}
+\@writefile{lof}{\select@language{british}}
+\@writefile{lot}{\select@language{british}}
 \@input{dedication/dedication.aux}
 \@input{acknowledgement/acknowledgement.aux}
 \@input{abstract/abstract.aux}
-\@writefile{toc}{\contentsline {chapter}{Nomenclature}{iii}}
-\@input{chapter1/chapter1.aux}
+\@writefile{toc}{\contentsline {chapter}{Nomenclature}{iii}{chapter*.2}}
+\@input{chapter1/introduction.aux}
 \@input{chapter2/chapter2.aux}
 \@input{chapter3/chapter3.aux}
 \@input{chapter4/chapter4.aux}

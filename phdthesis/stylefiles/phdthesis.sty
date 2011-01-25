@@ -2,7 +2,22 @@
 \ProvidesPackage{phdthesis}[2007/09/11 v1.0 PhD Thesis Style]
 
 % package for graphics
-\RequirePackage{graphicx}
+\RequirePackage[pdftex]{graphicx}
+
+% package for including subfigures
+\usepackage{subfigure}
+
+% package for upper case greek letters
+\usepackage{upgreek}
+
+% package for color text of latex
+\usepackage{xcolor}
+
+% package for language support for british english
+\usepackage[british]{babel}
+
+% package for checking if pdfTex in pdf mode
+\usepackage{ifpdf}
 
 %% change the equation number appearance
 %% load up the AMS math package
@@ -81,6 +96,32 @@
 
 \titleformat{\section}[hang]{\sffamily\bfseries}
 {\Large\thesection}{12pt}{\Large}[{\titlerule[0.5pt]}]
+
+% the last package to be included in the document!
+% package for hyperlinks 
+\RequirePackage{hyperref}
+% configure the hyperref package
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdfborder={0 0 0}	    % set the style of the border around a link e.g. {0 0 0} gives no border	
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={\thesistitle},    % title
+    pdfauthor={\authorname},     % author
+    pdfsubject={\subjectname},   % subject of the document
+    pdfcreator={Kile},   % creator of the document
+    pdfproducer={pdfTex}, % producer of the document
+    pdfkeywords={\thesiskeywordfirst} {\thesiskeywordsecond} {\thesiskeywordthird}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
 
 %%
 %% End of file `phdthesis.sty`

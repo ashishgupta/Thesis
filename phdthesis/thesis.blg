@@ -1,9 +1,10 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: title/title.aux
 A level-1 auxiliary file: dedication/dedication.aux
 A level-1 auxiliary file: acknowledgement/acknowledgement.aux
 A level-1 auxiliary file: abstract/abstract.aux
-A level-1 auxiliary file: chapter1/chapter1.aux
+A level-1 auxiliary file: chapter1/introduction.aux
 A level-1 auxiliary file: chapter2/chapter2.aux
 A level-1 auxiliary file: chapter3/chapter3.aux
 A level-1 auxiliary file: chapter4/chapter4.aux
@@ -15,7 +16,7 @@ I found no \citation commands---while reading file thesis.aux
 I found no \bibstyle command---while reading file thesis.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            95 strings with 761 characters,
+            96 strings with 780 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

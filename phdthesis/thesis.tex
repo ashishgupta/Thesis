@@ -1,18 +1,31 @@
+% macros
 \include{macros/univinfo}
 
+% classes
 \documentclass[12pt,a4paper,onecolumn]{book}
+
+% packages
 \usepackage{stylefiles/phdthesis}
 \usepackage{stylefiles/title}
 
-\graphicspath{{./figs/pdf/}{./figs/png/}}
-\begin{document}
-\input{title/title}
+% paths
+\ifpdf
+  \graphicspath{{./figs/pdf/}{./figs/png/}}
+\else
+  \graphicspath{{./figs/eps/}{./figs/png/}{./figs/}}
+\fi
 
-%set the number of sectioning levels that get number and appear in the contents
+\begin{document}            		% begin document
+
+% cover page
+\include{title/title}
+
+% preamble
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-\frontmatter % book mode only
+% front matter
+\frontmatter 
 \pagenumbering{roman}
 \include{dedication/dedication}
 \include{acknowledgement/acknowledgement}
@@ -22,9 +35,10 @@
 \listoffigures
 \addcontentsline{toc}{chapter}{Nomenclature}
 
-\mainmatter % book mode only
+% body of document
+\mainmatter
 
-\include{chapter1/chapter1}
+\include{chapter1/introduction}
 \include{chapter2/chapter2}
 \include{chapter3/chapter3}
 \include{chapter4/chapter4}
@@ -32,7 +46,8 @@
 \include{chapter6/chapter6}
 \include{chapter7/chapter7}
 
-\backmatter % book mode only
+% back matter
+\backmatter 
 
 \appendix
 \include{appendix/appendix1}

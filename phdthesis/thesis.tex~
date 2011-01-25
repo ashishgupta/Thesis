@@ -1,17 +1,13 @@
-%input macros (i.e. write your own macros file called MacroFile1.tex)
-%\include{Macros/MacroFile1}
+\include{macros/univinfo}
 
 \documentclass[12pt,a4paper,onecolumn]{book}
 \usepackage{stylefiles/phdthesis}
 \usepackage{stylefiles/title}
-\usepackage{graphics}
+
+\graphicspath{{./figs/png/}{./figs/pdf/}}
 \begin{document}
 
 \input{title/title}
-% \author{Ashish Gupta}
-% \title{Visual Object Category Recognition}
-% \date{December 2011}
-% \maketitle
 
 %set the number of sectioning levels that get number and appear in the contents
 \setcounter{secnumdepth}{3}
@@ -25,7 +21,6 @@
 
 \tableofcontents
 \listoffigures
-% \printnomenclature  %% Print the nomenclature
 \addcontentsline{toc}{chapter}{Nomenclature}
 
 \mainmatter % book mode only
@@ -43,7 +38,7 @@
 \appendix
 \include{appendix/appendix1}
 
-% \renewcommand{\bibname}{References} % changes default name Bibliography to References
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
 \bibliography{bibliography/bibliography} % References file
 
 \end{document}
